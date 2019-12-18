@@ -59,11 +59,11 @@ public class ExcelUtils {
     }
 
     public static final ExcelUtils initialization() {
-        ExcelUtils excelUtils = UTILS_THREAD_LOCAL.get();
-        if (excelUtils == null) {
-            excelUtils = new ExcelUtils();
-            UTILS_THREAD_LOCAL.set(excelUtils);
-        }
+//        ExcelUtils excelUtils = UTILS_THREAD_LOCAL.get();
+//        if (excelUtils == null) {
+        ExcelUtils  excelUtils = new ExcelUtils();
+//            UTILS_THREAD_LOCAL.set(excelUtils);
+//        }
         return excelUtils;
     }
 

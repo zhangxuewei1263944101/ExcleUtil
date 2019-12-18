@@ -52,11 +52,11 @@ public class LocalExcelUtils {
     }
 
     public static final LocalExcelUtils initialization() {
-        LocalExcelUtils excelUtils = UTILS_THREAD_LOCAL.get();
-        if (excelUtils == null) {
-            excelUtils = new LocalExcelUtils();
-            UTILS_THREAD_LOCAL.set(excelUtils);
-        }
+//        LocalExcelUtils excelUtils = UTILS_THREAD_LOCAL.get();
+//        if (excelUtils == null) {
+        LocalExcelUtils  excelUtils = new LocalExcelUtils();
+//            UTILS_THREAD_LOCAL.set(excelUtils);
+//        }
         return excelUtils;
     }
 
